@@ -7,3 +7,4 @@ export const setItemLocalStorage = (valueLocalStorage) => {
 };
 
 export const removeItemLocalStorage = () => localStorage.removeItem(STORAGE_KEY);
+

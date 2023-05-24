@@ -8,7 +8,7 @@ export const Section = styled.section`
   gap: 5px;
 `
 
-export const ContactsList = styled.ul`
+export const List = styled.ul`
 display: flex;
 flex-direction: column;
 justify-content: space-between;
