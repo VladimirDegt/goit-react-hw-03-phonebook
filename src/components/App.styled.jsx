@@ -1,13 +1,10 @@
 import styled from '@emotion/styled'
+import { displayFlex } from 'utils/display-flex'
 
-export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+export const StyledContainer = styled.div`
     gap: 20px;
     text-align: center;
+    ${displayFlex}
 
     h1, h2 {
       margin: 0;

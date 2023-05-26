@@ -1,22 +1,17 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
+import { displayFlex } from 'utils/display-flex';
 
-export const Section = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+export const StyledSection = styled.section`
+  ${displayFlex}
   gap: 10px;
 `
 
-export const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+export const StyledForm = styled.form`
+  ${displayFlex}
   gap: 5px;
 `
 
-export const Button = styled.button`
+export const StyledButton = styled.button`
   background-color: grey;
   cursor: pointer;
   border-radius: 4px;

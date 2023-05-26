@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 import { Notify } from 'notiflix';
 import AddContactsForm from "./AddContactsForm";
 import Contacts from "./Contacts";
-import { Container } from './App.styled';
+import { StyledContainer } from './App.styled';
 import { getItemLocalStorage, setItemLocalStorage } from "localStorage";
 
 export class App extends Component {
@@ -59,7 +59,7 @@ export class App extends Component {
 
   render() {
     return (
-      <Container>
+      <StyledContainer>
         <AddContactsForm 
           createContact={(data)=>this.createContact(data)}
         />
@@ -67,7 +67,7 @@ export class App extends Component {
           contacts={this.state.contacts}
           onDeleteContact = {this.deleteContact}
         />
-      </Container>
+      </StyledContainer>
     );
   };
 };

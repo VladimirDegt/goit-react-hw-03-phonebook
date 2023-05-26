@@ -1,22 +1,22 @@
 import PropTypes from 'prop-types';
-import { List, ItemList } from 'components/Contacts/Contacts.styled';
+import { StyledList, StyledItemList } from './ContactList.styled';
 
 function ContactList({ findValue, findContact, onDeleteContact}){
   return (
-    <List> 
+    <StyledList> 
       {findValue && findContact().map((item)=>{
       return (
-        <ItemList key={item.id}>
+        <StyledItemList key={item.id}>
           <span>{item.name}: {item.number}</span>
           <button 
             type="button"
             onClick={()=>onDeleteContact(item.id)}
             >delete
           </button>
-        </ItemList>
+        </StyledItemList>
       ) 
       })}
-    </List>
+    </StyledList>
   )
 };
 

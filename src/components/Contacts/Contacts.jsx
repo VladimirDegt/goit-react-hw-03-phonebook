@@ -1,6 +1,6 @@
 import { Component } from "react";
 import PropTypes from 'prop-types';
-import { Section } from './Contacts.styled';
+import { StyledSection } from './Contacts.styled';
 import Filter from "components/Filter/Filter";
 import ContactList from "components/ContactList/ContactList";
 
@@ -23,7 +23,7 @@ class Contacts extends Component {
   }
 
   render() {
-    return  <Section>
+    return  <StyledSection>
               <h2>Contacts</h2>
               <Filter 
                 handleInputChange = {this.handleInputChange}
@@ -34,7 +34,7 @@ class Contacts extends Component {
                 findContact = {this.findContact}
                 onDeleteContact = {this.props.onDeleteContact}
               />
-            </Section>
+            </StyledSection>
   }  
 };
 
