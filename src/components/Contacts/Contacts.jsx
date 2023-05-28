@@ -1,8 +1,9 @@
 import { Component } from "react";
 import PropTypes from 'prop-types';
 import { StyledSection } from './Contacts.styled';
-import Filter from "components/Filter/Filter";
+// import Filter from "components/Filter/Filter";
 import ContactList from "components/ContactList/ContactList";
+import { Filter } from "components/Filter";
 
 class Contacts extends Component {
 
