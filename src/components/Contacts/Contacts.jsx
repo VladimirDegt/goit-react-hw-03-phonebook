@@ -7,7 +7,7 @@ import ContactList from "components/ContactList/ContactList";
 class Contacts extends Component {
 
   state = {
-    find: '',
+    vidibleContacts: '',
   }
 
   handleInputChange = ({target}) => {
@@ -18,7 +18,7 @@ class Contacts extends Component {
 
   findContact = () => {
     return this.props.contacts.filter((item) => 
-      item.name.toLowerCase().includes(this.state.find.toLowerCase())
+      item.name.toLowerCase().includes(this.state.vidibleContacts.toLowerCase())
     )
   }
 
@@ -27,10 +27,10 @@ class Contacts extends Component {
               <h2>Contacts</h2>
               <Filter 
                 handleInputChange = {this.handleInputChange}
-                value={this.state.find}
+                value={this.state.vidibleContacts}
               />
               <ContactList
-                findValue = {this.state.find}
+                findValue = {this.state.vidibleContacts}
                 findContact = {this.findContact}
                 onDeleteContact = {this.props.onDeleteContact}
               />

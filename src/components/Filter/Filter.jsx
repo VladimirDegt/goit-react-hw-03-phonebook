@@ -10,7 +10,7 @@ function Filter({handleInputChange, value}){
       <input
         id = {inputFindId}
         type="text"
-        name="find"
+        name="vidibleContacts"
         required
         onChange={handleInputChange}
         value={value}
